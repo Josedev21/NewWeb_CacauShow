@@ -1,0 +1,32 @@
+@use 'variaveis';
+
+.shows {
+    padding: 5vw;
+    min-height: 100vh;
+    background-color: #fff;
+    
+    &__layout {
+
+        &__buttons {
+
+            &__list {
+                &__item{
+
+                }
+            }
+        }
+
+
+        &__produtos {
+
+            &__List {
+                display: grid;
+                grid-template-columns: 1fr 1fr 1fr;
+
+                &__item {
+
+                }
+            }
+        }
+    }
+}
