@@ -1,21 +1,32 @@
 @use "variaveis";
 @use "hero";
 
+
+@font-face {
+    font-family: Alegreya;
+    src: url(../../assets/fonts/Alegreya.zip);
+    font-weight: 400;
+}
+
 * {
     margin: 0;
     padding: 0;
     box-sizing: border-box;
 }
 
+
+
 body {
     background-color: variaveis.$CordeFundo;
+    font-family: Alegreya, sans-serif;
 }
 
-@mixin title($fontSize: 37px) {
+@mixin title($fontSize: 28px) {
     font-size: $fontSize;
     line-height: $fontSize + 10px;
 }
 
 .title {
     @include title;
+    color: variaveis.$ColorTitle;
 }

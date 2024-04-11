@@ -1,8 +1,16 @@
 @use "variaveis";
 
 .hero {
-    padding: 6vw;
+    padding: 4.5vw;
     min-height: 100vh;
     background-image: url(../images/fundo_hero.jpg);
     background-size: cover;
+
+    &__branding {
+        margin-left: 170px;
+        margin-top: 250px;
+        img {
+            width: 450px;
+        }
+    }
 }
