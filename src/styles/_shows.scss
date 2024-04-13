@@ -3,28 +3,52 @@
 .shows {
     padding: 5vw;
     min-height: 100vh;
-    background-color: #fff;
-    
+    background-image: url(../../dist/images/fundo-section-produtos.png);
+
+    h2 {
+        text-align: center;
+        margin-bottom: 70px;
+    }
+
     &__layout {
+        display: grid;
+        grid-template-columns: 1fr 3fr;
 
         &__buttons {
-
+            margin-top: 50%;
+            width: 140px;
+            
             &__list {
+                display: block;
+                background-color: rgba(variaveis.$ColorTitle, 0.7);
+                
                 &__item{
-
+                    height: 40px;
+                    padding: 8px;
+                    list-style: none;
+                    border-bottom: 4px solid variaveis.$ColorTitle;
+                
+                    a {
+                        text-decoration: none;
+                        color: variaveis.$ColorBorderProdutos;
+                    }
                 }
             }
         }
 
-
         &__produtos {
-
-            &__List {
+            background-color: rgba(255, 255, 255, 0.7);
+            border: 5px solid variaveis.$ColorBorderProdutos ;
+            border-radius: 15px;
+            
+            &__list {
                 display: grid;
                 grid-template-columns: 1fr 1fr 1fr;
+                gap: 10px;
 
                 &__item {
-
+                    list-style: none;
+                    padding: 40px;
                 }
             }
         }
