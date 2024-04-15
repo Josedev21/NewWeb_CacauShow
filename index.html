@@ -1,12 +1,41 @@
 <!DOCTYPE html>
 <html lang="pt-BR">
+
 <head>
     <meta charset="UTF-8">
     <meta name="viewport" content="width=device-width, initial-scale=1.0">
     <title>Cacau Show</title>
     <link rel="stylesheet" href="./dist/css/main.css">
 </head>
+
 <body>
+    <section class="subnav">
+        <div class="subnav__container">
+            <ul class="subnav__container__links">
+                <li class="subnav__container__links__item">
+                    <a class="text__small" href="#">Seja um Revendedo</a>
+                </li>
+                <li class="subnav__container__links__item">
+                    <a class="text__small" href="#">Seja um Franqueado</a>
+                </li>
+                <li class="subnav__container__links__item">
+                    <a class="text__small" href="#">Área para Empresa</a>
+                </li>
+                <li class="subnav__container__links__item">
+                    <a class="text__small" href="#">Vale Presente</a>
+                </li>
+                <li class="subnav__container__links__item">
+                    <a class="text__small" href="#">Trabalhe Conosco</a>
+                </li>
+                <li class="subnav__container__links__item">
+                    <a class="text__small" href="#">Encontre uma Loja</a>
+                </li>
+                <li class="subnav__container__links__item">
+                    <a class="text__small" href="#">Cacau Lovers</a>
+                </li>
+            </ul>
+        </div>
+    </section>
     <section class="hero">
         <div class="hero__branding">
             <h2 class="title">Os melhores momentos são aqui, na</h2>
@@ -16,21 +45,35 @@
     <section class="shows">
         <h2 class="title">Qual sonho você quer realizar hoje?</h2>
         <div class="shows__layout">
-            <div class="shows__layout__buttons">
-                <ul class="shows__layout__buttons__list">
-                    <li class="shows__layout__buttons__list__item">
-                        <a href="#">Ovos Da Pascoa</a>
+            <nav class="shows__layout__list">
+                <button data-tab-button="ovo_pascoa"
+                    class="text shows__layout__list__item  shows__layout__list__item--is-active">Ovos Da pascoa</button>
+                <button data-tab-button="bombom" class="text shows__layout__list__item ">Bombom</button>
+                <button data-tab-button="chocolate" class="text shows__layout__list__item ">chocolate</button>
+            </nav>
+            <div class="shows__layout__produtos">
+                <ul data-tab-id="ovo_pascoa"
+                    class="shows__layout__produtos__list shows__layout__produtos__list--is-active">
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-3.png" alt="">
                     </li>
-                    <li class="shows__layout__buttons__list__item">
-                        <a href="#">Ovos Da Pascoa</a>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-3.png" alt="">
                     </li>
-                    <li class="shows__layout__buttons__list__item">
-                        <a href="#">Ovos Da Pascoa</a>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-3.png" alt="">
+                    </li>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-3.png" alt="">
+                    </li>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-3.png" alt="">
+                    </li>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-3.png" alt="">
                     </li>
                 </ul>
-            </div>
-            <div class="shows__layout__produtos">
-                <ul class="shows__layout__produtos__list">
+                <ul data-tab-id="bombom" class="shows__layout__produtos__list">
                     <li class="shows__layout__produtos__list__item">
                         <img src="./dist/images/produtos/produto-1.png" alt="">
                     </li>
@@ -48,11 +91,32 @@
                     </li>
                     <li class="shows__layout__produtos__list__item">
                         <img src="./dist/images/produtos/produto-1.png" alt="">
+                    </li>
+                </ul>
+                <ul data-tab-id="chocolate" class="shows__layout__produtos__list">
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-2.png" alt="">
+                    </li>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-2.png" alt="">
+                    </li>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-2.png" alt="">
+                    </li>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-2.png" alt="">
+                    </li>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-2.png" alt="">
+                    </li>
+                    <li class="shows__layout__produtos__list__item">
+                        <img src="./dist/images/produtos/produto-2.png" alt="">
                     </li>
                 </ul>
             </div>
         </div>
     </section>
-    
+    <script src="./src/main.js"></script>
 </body>
+
 </html>

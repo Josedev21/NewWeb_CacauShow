@@ -1,0 +1,26 @@
+@use 'variaveis';
+
+.subnav {
+    background-color: variaveis.$ColorBorderProdutos;
+    height: 35px;
+
+    &__container {
+
+        &__links {
+            display: flex;
+            justify-content: center;
+            padding-top: 8px;
+            
+            &__item {
+                list-style: none;
+                margin-right: 15px;
+
+                a {
+                    text-decoration: none;
+                    color: variaveis.$ColorLinksNav;
+                    font-weight: 700;
+                }
+            }
+        }
+    }
+}

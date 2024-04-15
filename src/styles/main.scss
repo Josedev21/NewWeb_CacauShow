@@ -1,6 +1,7 @@
 @use "variaveis";
 @use "hero";
 @use 'shows';
+@use 'subnav';
 
 
 @font-face {
@@ -13,13 +14,13 @@
     margin: 0;
     padding: 0;
     box-sizing: border-box;
+    font-family: Alegreya, sans-serif;
 }
 
 
 
 body {
     background-color: variaveis.$CordeFundo;
-    font-family: Alegreya, sans-serif;
 }
 
 @mixin title($fontSize: 28px) {
@@ -30,4 +31,16 @@ body {
 .title {
     @include title;
     color: variaveis.$ColorTitle;
+}
+
+@mixin text ($fontSize:17px) {
+    @include title($fontSize);
+}
+
+.text {
+    @include text;
+}
+
+.text__small {
+    @include text(12px);
 }
