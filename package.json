@@ -1,7 +1,6 @@
 {
   "name": "newweb_cacaushow",
   "version": "1.0.0",
-  "description": "",
   "main": "index.js",
   "scripts": {
     "build": "gulp",
@@ -12,9 +11,11 @@
   "author": "",
   "license": "ISC",
   "devDependencies": {
+    "escalade": "^3.1.2",
     "gulp": "^4.0.2",
     "gulp-imagemin": "^7.1.0",
     "gulp-sass": "^5.1.0",
     "sass": "^1.72.0"
-  }
+  },
+  "description": ""
 }
